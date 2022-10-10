@@ -12,7 +12,7 @@ import { MapsComponent } from '../../pages/maps/maps.component';
 import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
 import { TablesComponent } from '../../pages/tables/tables.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
+import { NgxUiLoaderModule } from 'ngx-ui-loader';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -23,7 +23,8 @@ import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
     HttpClientModule,
     NgbModule,
     ClipboardModule,
-    NgxUiLoaderModule
+    NgxUiLoaderModule,
+    ReactiveFormsModule
   ],
   declarations: [
     DashboardComponent,

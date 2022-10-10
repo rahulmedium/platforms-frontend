@@ -1,6 +1,6 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
@@ -28,7 +28,8 @@ import { NgxUiLoaderModule, NgxUiLoaderHttpModule, NgxUiLoaderRouterModule } fro
     RouterModule,
     AppRoutingModule,
     NgxUiLoaderModule,
-    NgxUiLoaderHttpModule.forRoot({ showForeground: true })
+    NgxUiLoaderHttpModule.forRoot({ showForeground: true }),
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
