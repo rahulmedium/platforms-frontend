@@ -20,7 +20,10 @@ export class LoginComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/dashboard';
+    if(this.authenticationService.currentUserValue && this.authenticationService.currentUserValue.token) {
+      this.router.navigate([this.returnUrl]);
+    }
   }
 
   onSubmit() {
