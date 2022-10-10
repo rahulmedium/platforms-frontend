@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 
 @Component({
@@ -17,6 +18,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     private authenticationService: AuthenticationService,
     private route: ActivatedRoute,
     private router: Router,
+    private ngxLoader: NgxUiLoaderService
   ) { }
 
   ngOnInit() {

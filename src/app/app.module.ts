@@ -15,6 +15,8 @@ import { ComponentsModule } from './components/components.module';
 import { JwtInterceptor } from './helpers/jwt.interceptor';
 import { ErrorInterceptor } from './helpers/error.interceptor';
 
+import { NgxUiLoaderModule, NgxUiLoaderHttpModule, NgxUiLoaderRouterModule } from "ngx-ui-loader";
+
 
 @NgModule({
   imports: [
@@ -24,7 +26,9 @@ import { ErrorInterceptor } from './helpers/error.interceptor';
     ComponentsModule,
     NgbModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({ showForeground: true })
   ],
   declarations: [
     AppComponent,
