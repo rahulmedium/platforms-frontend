@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://legal-back.herokuapp.com/'
+  apiUrl: 'https://legal-back.herokuapp.com'
 };
 
 /*
